@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mt-5">
+            <form action="/personas/crea/" method="POST" class="card card-body">
+                <h2 class="text-center display-6 py-2">Crea Usuario</h2>
+                {{error}}
+                {% csrf_token %}
+                {{form.as_p}}
+                <div class="text-center">
+                    <button class="btn btn-primary">
+                        Grabar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
