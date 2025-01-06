@@ -95,6 +95,8 @@ DATABASES = {
         conn_max_age=600
     )
 }
+
+DATABASES['default'] = dj_database_url.parse("postgresql://riego_gsuj_user:lDAfRP0DGJetkNHNjilv1gD3nhi787sa@dpg-ctrdgv3qf0us73864p70-a.oregon-postgres.render.com/riego_gsuj")
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
